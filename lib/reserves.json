@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tth_reserve_talentless",
+    "name": "Talentless (Talentless Hack)",
+    "type": "Bonus",
+    "label": "Bonus",
+    "description": "Remove all talent points.",
+    "bonuses": [
+      {
+        "id": "talent_point",
+        "val": "-(3 + {ll})"
+      }
+    ]
+  },
+  {
+    "id": "tth_reserve_improved_system_points",
+    "name": "Improved System Points (Talentless Hack)",
+    "type": "Bonus",
+    "label": "Bonus",
+    "description": "Increase base Mech SP by 2. Increase SP scaling to 1 per LL instead of 1 per Grit.",
+    "bonuses": [
+      {
+        "id": "sp",
+        "val": "2 + {ll} - {grit}"
+      }
+    ]
+  },
+  {
+    "id": "tth_reserve_mech_skilless",
+    "name": "Mech Skilless (Talentless Hack)",
+    "type": "Bonus",
+    "label": "Bonus",
+    "description": "Add a Mech Skill Point to add to your Pilot's HULL, AGILITY, SYSTEMS, or ENGINEERING rating.",
+    "bonuses": [
+      {
+        "id": "mech_skill_point",
+        "val": "-(2 + {ll})"
+      }
+    ]
+  }
+]

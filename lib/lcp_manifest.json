@@ -1,0 +1,41 @@
+{
+  "name": "The Talentless Hack Data",
+  "author": "Michael Prijatelj",
+  "description": "Third-party pilot talent replacement for LANCER.",
+  "item_prefix": "tth_",
+  "version": "0.0.1",
+  "dependencies": [
+    {
+      "name": "Lancer Long Rim Data",
+      "version": "1.2.1"
+    },
+    {
+      "name": "Lancer Wallflower Data",
+      "version": "2.0.5"
+    },
+    {
+      "name": "Lancer KTB Data",
+      "version": "1.2.3"
+    },
+    {
+      "name": "Operation Solstice Rain Data",
+      "version": "1.2.1"
+    },
+    {
+      "name": "LANCER: Dustgrave",
+      "version": "1.4.0"
+    },
+    {
+      "name": "Siren's Song, A Mountain's Remorse",
+      "version": "1.7.0"
+    },
+    {
+      "name": "Operation Winter Scar",
+      "version": "1.0.0"
+    },
+    {
+      "name": "Shadow of the Wolf",
+      "version": "1.0.2"
+    }
+  ]
+}
