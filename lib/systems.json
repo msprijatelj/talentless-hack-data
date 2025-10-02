@@ -1,3 +1,65 @@
 [
+  {
+    "id": "tth_ms_interdiction_subroutines",
+    "name": "Interdiction Subroutines",
+    "type": "Shield",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fearless Defender",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "An allied character in Range 3 takes damage from a hostile source.",
+        "detail": "You may move to a space adjacent to the ally and take the damage (but not the other effects) instead."
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_ms_roughhouse_subroutines",
+    "name": "Roughhouse Subroutines",
+    "type": "System",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
 
+    "effect": "Gain +1 Accuracy when attacking a SLOWED or IMMOBILIZED target.",
+    "description": ""
+  },
+  {
+    "id": "tth_ms_sledgehammer_servos",
+    "name": "Sledgehammer Servos",
+    "type": "System",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "Your IMPROVISED ATTACKS gain KNOCKBACK 2 and deal 2d6+2 damage.",
+    "description": ""
+  }
 ]

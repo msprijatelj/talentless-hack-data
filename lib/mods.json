@@ -1,3 +1,26 @@
 [
-
+  {
+    "id": "tth_wm_predator_mod",
+    "name": "Predator Mod",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "effect": "When you roll a 20 on a die for any attack with this weapon and critically hit, you deal the maximum possible damage and bonus damage.",
+    "description": ""
+  }
 ]
