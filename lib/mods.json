@@ -77,23 +77,23 @@
         "name": "Parry",
         "activation": "Reaction",
         "trigger": "You are hit by a melee attack.",
-        "detail": "Expend 1 Blademaster die. You gain Resistance to all damage, heat, and burn dealt by the attack."
+        "detail": "<p>Expend 1 Blademaster die. You gain Resistance to all damage, heat, and burn dealt by the attack.</p>"
       },
       {
         "name": "Deflect",
         "activation": "Reaction",
         "trigger": "You are hit by a ranged attack.",
-        "detail": "You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack."
+        "detail": "<p>You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack.</p>"
       },
       {
         "name": "Feint",
         "activation": "Free",
-        "detail": "Expend 1 Blademaster die. Choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn."
+        "detail": "<p>Expend 1 Blademaster die. Choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn.</p>"
       },
       {
         "name": "Trip",
         "activation": "Quick",
-        "detail": "Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
+        "detail": "<p>Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space.</p>"
       }
     ],
     "counters": [
@@ -151,14 +151,14 @@
       {
         "name": "Covering Fire",
         "activation": "Quick",
-        "detail": "Choose a character within line of sight and Range of your weapon, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
+        "detail": "<p>Choose a character within line of sight and Range of your weapon, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again.</p>"
       },
       {
         "name": "Pin Down",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "The target of your Covering Fire moves more than 1 space.",
-        "detail": "You may attack the target with this weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover). If you hit, the target is <b><span style='font-variant: small-caps;'>Immobilized</span></b> until the end of their next turn."
+        "trigger": "<p>The target of your Covering Fire moves more than 1 space.</p>",
+        "detail": "<p>You may attack the target with this weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover). If you hit, the target is <b><span style='font-variant: small-caps;'>Immobilized</span></b> until the end of their next turn.</p>"
       }
     ],
     "description": ""
@@ -195,7 +195,7 @@
       {
         "name": "Jackhammer Round",
         "activation": "Quick",
-        "detail": "Fire a jackhammer round from an underslung launcher, automatically dealing 10 AP Kinetic damage to a Size 1 section of any object within Range of this weapon (e.g., cover, deployable equipment, buildings, or terrain). Any characters adjacent to your target are knocked back from it by 2 spaces and take 2 Kinetic damage."
+        "detail": "<p>Fire a jackhammer round from an underslung launcher, automatically dealing 10 AP Kinetic damage to a Size 1 section of any object within Range of this weapon (e.g., cover, deployable equipment, buildings, or terrain). Any characters adjacent to your target are knocked back from it by 2 spaces and take 2 Kinetic damage.</p>"
       }
     ],
     "description": ""
