@@ -10,7 +10,7 @@
     "sp": 2,
     "tags": [
       {
-        "id": "shield"
+        "id": "tg_shield"
       },
       {
         "id": "tg_unique"
@@ -21,8 +21,8 @@
         "name": "Fearless Defender",
         "activation": "Reaction",
         "frequency": "1/round",
-        "trigger": "An allied character in Range 3 takes damage from a hostile source.",
-        "detail": "You may move to a space adjacent to the ally and take the damage (but not the other effects) instead."
+        "trigger": "<p>An allied character in <b>Range 3</b> takes damage from a hostile source.</p>",
+        "detail": "<p>You may move to a space adjacent to the ally and take the damage (but not the other effects) instead.</p>"
       }
     ],
     "description": ""
@@ -41,8 +41,18 @@
         "id": "tg_unique"
       }
     ],
-
-    "effect": "Gain +1 Accuracy when attacking a SLOWED or IMMOBILIZED target.",
+    "effect": "<p>Gain <b>+1 Accuracy</b> when making a melee attack against a <b><span style='font-variant: small-caps;'>Slowed</span></b> or <b><span style='font-variant: small-caps;'>Immobilized</span></b> target.</p>",
+    "synergies": [
+      {
+        "locations": [
+          "weapon"
+        ],
+        "detail": "<p>Gain <b>+1 Accuracy</b> when making a melee attack against a <b><span style='font-variant: small-caps;'>Slowed</span></b> or <b><span style='font-variant: small-caps;'>Immobilized</span></b> target.</p>",
+        "weapon_types": [
+          "Melee"
+        ]
+      }
+    ],
     "description": ""
   },
   {
@@ -59,7 +69,93 @@
         "id": "tg_unique"
       }
     ],
-    "effect": "Your IMPROVISED ATTACKS gain KNOCKBACK 2 and deal 2d6+2 damage.",
+    "effect": "<p>Your <b><span style='font-variant: small-caps;'>Improvised Attacks</span></b> gain <b><span style='font-variant: small-caps;'>Knockback 2</span></b> and deal <b>2d6+2</b> damage.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_ms_cqb_enhancement_suite",
+    "name": "CQB Enhancement Suite",
+    "type": "System",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "<p>As long as you're <b><span style='font-variant: small-caps;'>Engaged</span></b>, you and any allies adjacent to you count as having <b>soft cover</b>.</p><p>You don't gain <b><span style='font-variant: small-caps;'>Difficulty</span></b> from being <b><span style='font-variant: small-caps;'>Engaged</span></b>.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_ms_shepherd_neural_net",
+    "name": "Shepherd Neural Net",
+    "type": "System",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "<p>Your Drone systems gain +5 HP. Additionally, gain the <b>Shepherd Drone</b> Protocol.</p><p>1/round, when you make an attack that consumes the Lock On condition, your Drones immediately emit a vicious pulse of energy. All characters of your choice within Burst 1 areas centered on each of your drones take 1d6 Energy damage. Each character can only be affected by the pulse from one drone, even if the areas overlap.</p>",
+    "actions": [
+      {
+        "name": "Shepherd Drone",
+        "activation": "Protocol",
+        "detail": "Move a drone you control up to 4 spaces if it is within Sensors."
+      }
+    ],
+    "bonuses": [
+      {
+        "id": "drone_hp",
+        "val": 5
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_ms_harrier_subroutines",
+    "name": "Harrier Subroutines",
+    "type": "System",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "<p>The first time on your turn that you attack a hostile character within Range 3, hit or miss, you may give them the Exemplar’s Mark as a free action. Characters can only have one Exemplar’s Mark at a time – new marks from any character replace existing marks.</p><p>The character has the Exemplar’s Mark until the start of your next turn, and while they have it, if they attack a character other than you while within Range 3, they trigger your Overwatch.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_ms_compel_duel",
+    "name": "Compel Duel",
+    "type": "Tech",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "<p>You enter a <b>duel</b> with a hostile character within <b><span style='font-variant: small-caps;'>Sensors</span></b> and line of sight. While in the <b>duel</b>, the target must make a <b><span style='font-variant: small-caps;'>Systems</span></b> save at the start of each of their turns. On a failure, until the start of the target’s next turn, they receive <b>+3 Difficulty</b> on all attacks that don’t include you as a target, and they cannot voluntarily move away from you.</p><p>The <b>duel</b> lasts until the end of the scene, until you take this action again, or until you or your opponent is destroyed. Each character cannot enter another <b>duel</b> until the current one ends.</p>"
+      }
+    ],
     "description": ""
   }
 ]

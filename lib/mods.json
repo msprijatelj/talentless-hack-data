@@ -12,15 +12,212 @@
         "id": "tg_unique"
       }
     ],
+    "effect": "<p>When you roll a 20 on a die for any attack with this weapon and critically hit, you deal the maximum possible damage and bonus damage.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_pinpoint_targeter",
+    "name": "Pinpoint Targeter",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [],
     "allowed_types": [
-      "Melee",
+      "Rifle"
+    ],
+    "actions": [
+      {
+        "name": "Steady Aim",
+        "activation": "Protocol",
+        "detail": "<p>Become Immobilized until the start of your next turn but gain +1 Accuracy on all attacks you make with this weapon.</p><p>1/round, when you perform a critical hit with this weapon while steadying your aim, your target must pass a Hull save or you may choose an additional effect for your attack:<ul><li><b>Headshot:</b> They only have line of sight to adjacent spaces until the end of their next turn.</li><li><b>Leg shot:</b> They become Immobilized until the end of their next turn.</li><li><b>Body shot:</b> They are knocked Prone.</li></ul></p>"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_wm_swarm_suppressor",
+    "name": "Swarm Suppressor",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "allowed_types": [
+      "Nexus"
+    ],
+    "effect": "<p>1/round, if you hit a target with this weapon with a critical hit or while consuming Lock On, your target must succeed on a Systems save or you may choose an additional effect for your attack that lasts until the end of their next turn:<ul><li><b>Harrying Swarm:</b> They become Impaired and Slowed.</li><li><b>Blinding Swarm:</b> They only have line of sight to adjacent squares.</li><li><b>Virulent Swarm:</b> They become Shredded. Any adjacent characters of your choice must also make a Systems save or become Shredded.</li><li><b>Restricting Swarm:</b> They take 1 Burn each time they take an action or reaction.</li></ul></p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_duelist_grip",
+    "name": "Duelist Grip",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [],
+    "allowed_sizes": [
+      "Main"
+    ],
+    "allowed_types": [
+      "Melee"
+    ],
+    "effect": "<p>1/round, when you hit with this weapon, you gain 1 Blademaster Die – a d6 – up to a maximum of 3 Blademaster Die. They last until expended or the current scene ends. You can expend Blademaster Dice 1-for-1 for the following actions:</p>",
+    "actions": [
+      {
+        "name": "Parry",
+        "activation": "Reaction",
+        "trigger": "You are hit by a melee attack.",
+        "detail": "Expend 1 Blademaster die. You gain Resistance to all damage, heat, and burn dealt by the attack."
+      },
+      {
+        "name": "Deflect",
+        "activation": "Reaction",
+        "trigger": "You are hit by a ranged attack.",
+        "detail": "You may roll any number of Blademaster Dice, expending them: if you roll a 5+ on any of these dice, you gain Resistance to all damage, heat, and burn dealt by the attack."
+      },
+      {
+        "name": "Feint",
+        "activation": "Free",
+        "detail": "Expend 1 Blademaster die. Choose an adjacent character: when moving, you ignore engagement and don’t provoke reactions from your target until the start of your next turn."
+      },
+      {
+        "name": "Trip",
+        "activation": "Quick",
+        "detail": "Expend 1 Blademaster die. Choose an adjacent character: they must pass an Agility save or fall Prone. Whatever the result, you may freely pass through their space until the end of your current turn, although you can’t end your turn in their space."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_duelist",
+        "name": "Blademaster Dice",
+        "default_value": 0,
+        "min": 0,
+        "max": 3
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_wm_weighted_haft",
+    "name": "Weighted Haft",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 1,
+    "tags": [],
+    "allowed_sizes": [
+      "Heavy",
+      "Superheavy"
+    ],
+    "allowed_types": [
+      "Melee"
+    ],
+    "effect": "<p>When you reduce an opponent to 0 Structure and destroy them with this weapon, you may inflict any damage above that required to destroy them to another valid target in the weapon’s Threat. You may repeat this process as long as you have leftover damage.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_hammerbeat_rounds",
+    "name": "Hammerbeat Rounds",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_sizes": [
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_types": [
+      "Melee"
+    ],
+    "effect": "<p>Gain the <b><span style='font-variant: small-caps;'>Covering Fire</span></b> Quick Action and <b><span style='font-variant: small-caps;'>Pin Down</span></b> Reaction.</p>",
+    "actions": [
+      {
+        "name": "Covering Fire",
+        "activation": "Quick",
+        "detail": "Choose a character within line of sight and Range of one of your weapon, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
+      },
+      {
+        "name": "Pin Down",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "The target of your Covering Fire moves more than 1 space.",
+        "detail": "You may attack the target with this weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover). If you hit, the target is <b><span style='font-variant: small-caps;'>Immobilized</span></b> until the end of their next turn."
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_wm_hammerbeat_rounds",
+    "name": "Hammerbeat Rounds",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_sizes": [
+      "Heavy",
+      "Superheavy"
+    ],
+    "allowed_types": [
       "CQB",
       "Rifle",
       "Launcher",
       "Cannon",
       "Nexus"
     ],
-    "effect": "When you roll a 20 on a die for any attack with this weapon and critically hit, you deal the maximum possible damage and bonus damage.",
+    "effect": "<p>Gain the <b><span style='font-variant: small-caps;'>Covering Fire</span></b> Quick Action and <b><span style='font-variant: small-caps;'>Pin Down</span></b> Reaction.</p>",
+    "actions": [
+      {
+        "name": "Covering Fire",
+        "activation": "Quick",
+        "detail": "Choose a character within line of sight and Range of one of your Heavy ranged weapons, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
+      },
+      {
+        "name": "Pin Down",
+        "activation": "Reaction",
+        "frequency": "1/round",
+        "trigger": "The target of your Covering Fire moves more than 1 space.",
+        "detail": "You may attack the target with a Heavy ranged weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover). If you hit, the target is <b><span style='font-variant: small-caps;'>Immobilized</span></b> until the end of their next turn."
+      }
+    ],
+    "description": ""
+  },
+    {
+    "id": "tth_wm_fusion_hemorrhage",
+    "name": "Fusion Hemorrhage",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "<p>While you are in the <b><span style='font-variant: small-caps;'>Danger Zone</span></b>, this weapon deals <b>Energy damage</b> instead of its usual types and gains <b>AP</b> and <b><span style='font-variant: small-caps;'>Overkill</span></b>.</p>",
     "description": ""
   }
 ]

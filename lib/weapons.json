@@ -1,3 +1,38 @@
 [
-  
+  {
+    "id": "tth_mw_fuel_rod_gun",
+    "name": "Fuel Rod Gun (TH)",
+    "mount": "Main",
+    "type": "CQB",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "on_attack": "Clear 4 heat."
+  }
 ]
