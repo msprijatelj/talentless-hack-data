@@ -151,7 +151,7 @@
       {
         "name": "Covering Fire",
         "activation": "Quick",
-        "detail": "Choose a character within line of sight and Range of one of your weapon, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
+        "detail": "Choose a character within line of sight and Range of your weapon, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
       },
       {
         "name": "Pin Down",
@@ -164,47 +164,6 @@
     "description": ""
   },
   {
-    "id": "tth_wm_hammerbeat_rounds",
-    "name": "Hammerbeat Rounds",
-    "license_id": "",
-    "source": "GMS",
-    "license": "GMS",
-    "license_level": 0,
-    "sp": 2,
-    "tags": [
-      {
-        "id": "tg_unique"
-      }
-    ],
-    "allowed_sizes": [
-      "Heavy",
-      "Superheavy"
-    ],
-    "allowed_types": [
-      "CQB",
-      "Rifle",
-      "Launcher",
-      "Cannon",
-      "Nexus"
-    ],
-    "effect": "<p>Gain the <b><span style='font-variant: small-caps;'>Covering Fire</span></b> Quick Action and <b><span style='font-variant: small-caps;'>Pin Down</span></b> Reaction.</p>",
-    "actions": [
-      {
-        "name": "Covering Fire",
-        "activation": "Quick",
-        "detail": "Choose a character within line of sight and Range of one of your Heavy ranged weapons, and within 10 spaces: they are Impaired until the start of your next turn, until they damage you, or until you take this action again."
-      },
-      {
-        "name": "Pin Down",
-        "activation": "Reaction",
-        "frequency": "1/round",
-        "trigger": "The target of your Covering Fire moves more than 1 space.",
-        "detail": "You may attack the target with a Heavy ranged weapon for half damage, Heat, or Burn. You can make this attack at any point during their movement (e.g., waiting until they exit cover). If you hit, the target is <b><span style='font-variant: small-caps;'>Immobilized</span></b> until the end of their next turn."
-      }
-    ],
-    "description": ""
-  },
-    {
     "id": "tth_wm_fusion_hemorrhage",
     "name": "Fusion Hemorrhage",
     "license_id": "",
@@ -218,6 +177,88 @@
       }
     ],
     "effect": "<p>While you are in the <b><span style='font-variant: small-caps;'>Danger Zone</span></b>, this weapon deals <b>Energy damage</b> instead of its usual types and gains <b>AP</b> and <b><span style='font-variant: small-caps;'>Overkill</span></b>.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_jackhammer_rounds",
+    "name": "Jackhammer Rounds",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [],
+    "allowed_types": [
+      "Cannon"
+    ],
+    "actions": [
+      {
+        "name": "Jackhammer Round",
+        "activation": "Quick",
+        "detail": "Fire a jackhammer round from an underslung launcher, automatically dealing 10 AP Kinetic damage to a Size 1 section of any object within Range of this weapon (e.g., cover, deployable equipment, buildings, or terrain). Any characters adjacent to your target are knocked back from it by 2 spaces and take 2 Kinetic damage."
+      }
+    ],
+    "description": ""
+  },
+  {
+    "id": "tth_wm_stormbringer_munitions",
+    "name": "Stormbringer Munitions",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 3,
+    "tags": [],
+    "allowed_types": [
+      "Launcher"
+    ],
+    "effect": "<p>When you successfully attack with this weapon and consume Lock On, you may also knock your target Prone.</p><p>1/round, when you hit a character or object with a Launcher, you can choose one of the following effects:<ul><li><b>Lightning:</b> You fire a concentrated blast of missiles at that character. They must succeed on a Hull save or be knocked away from you by 3 spaces; the force of firing then knocks you back by 3 spaces, away from the direction of fire.</li><li><b>Thunder:</b> You fire a spray of missiles at a Burst 2 area around that target. Characters in the area must succeed on an Agility save or be knocked back by 1 space, away from the target. The primary target is unaffected.</li></ul></p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_phalanx_mod",
+    "name": "Phalanx Mod",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [],
+    "allowed_types": [
+      "Melee",
+      "CQB"
+    ],
+    "effect": "<p>When hostile characters enter, leave, or exit spaces within this weapon's Threat, they trigger your Overwatch with this weapon, no matter whether they started their movement there.</p>",
+    "description": ""
+  },
+  {
+    "id": "tth_wm_walking_armory",
+    "name": "Walking Armory",
+    "license_id": "",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "allowed_sizes": [
+      "Main"
+    ],
+    "restricted_types": [
+      "Melee"
+    ],
+    "effect": "<p>1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost: <ul><li><b>Thumper</b> (1 charge): The attack gains Knockback 1 and deals Explosive damage.</li><li><b>Shock</b> (1 charge): The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.</li><li><b>Mag</b> (1 charge): The attack gains Arcing and deals Kinetic damage.</li><li><b>Hellfire</b> (2 charges): The attack deals Energy damage and deals any bonus damage as Burn.</li><li><b>Jager</b> (2 charges): The attack gains Knockback 2, deals Explosive damage, and one character hit by the attack – your choice – must succeed on a Hull save or be knocked Prone.</li><li><b>Sabot</b> (2 charges): The attack gains AP and deals Kinetic damage.</li></ul></p>",
     "description": ""
   }
 ]
